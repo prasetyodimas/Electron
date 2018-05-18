@@ -1,0 +1,13 @@
+body{
+  font-size: 12px;
+  font-family: arial, sans-serif;
+}
+
+.main-aplication-areas{
+    padding: 2em;
+    background: #f7f7f7;
+}
+
+.main-header-aplication h4.heading-title{
+  padding:1em 1em;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>RSUD WALLED</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="frontend/main.css">
+  </head>
+  <body>
+    <div class="main-header-aplication">
+      <h4 class="heading-title"> Aplikasi Cetak Gelang Pasien </h4>
+    </div>
+
+    <div class="main-aplication-areas">
+      <h5>Pilih Pengaturan</h5>
+      <div class="col-sm-12 col-md-12">
+        <label>Layout</label>
+        <select id="layout-settings" name="layout-settings" class="form-control">
+          <option selected="">Portrait</option>
+          <option >Landscape</option>
+        </select>
+      </div>
+
+      <div class="col-sm-12 col-md-12">
+        <label>Page size</label>
+        <select id="page-size-settings" name="page-size-settings" class="form-control">
+            <option>A4</option>
+            <option>A3</option>
+            <option>Letter</option>
+            <option>Legal</option>
+            <option>Tabloid</option>
+         </select>
+      </div>
+
+      <div class="col-sm-12 col-md-12">
+        <label>Margins</label>
+        <select id="margin-settings" class="form-control">
+          <option value="0" selected="">Default</option>
+          <option value="1">None</option>
+          <option value="2">Minimum</option>
+        </select>
+      </div>
+
+      <div class="col-sm-12 col-md-12">
+        <div>
+          <p style="display:inline-block;width:100px;margin-right:10px;">Margins</p>
+          <div style="display:inline-block">
+          <input id="print-background" type="checkbox">
+          <span i18n-content="optionBackgroundColorsAndImages">Background graphics</span>
+        </div>
+        <div style="padding-left:115px">
+          <input id="print-selection" type="checkbox">
+          <span i18n-content="optionBackgroundColorsAndImages">Selection only</span>
+        </div>
+      </div>
+
+      <div style="margin-top:15px">
+        <button id="print_button">Cetak Gelang</button>
+        <!-- <button id="save_pdf_button">Save as PDF</button> -->
+        <!-- <button id="view_pdf_button">View PDF</button> -->
+      </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <script> require('./renderer.js') </script>
+    <script> require('./db/conection.js') </script>
+  </body>
+</html>
