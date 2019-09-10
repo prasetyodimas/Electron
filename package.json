@@ -1,0 +1,26 @@
+{
+  "name": "electron-printer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmir123/Electron.git"
+  },
+  "author": "Dimas Prasetyo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladmir123/Electron/issues"
+  },
+  "homepage": "https://github.com/vladmir123/Electron#readme",
+  "devDependencies": {
+    "electron": "^6.0.8"
+  },
+  "dependencies": {
+    "pdf-to-printer": "^1.0.3"
+  }
+}

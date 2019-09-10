@@ -55,6 +55,23 @@ function createWindowRM(){
    }));
 }
 
+//Handle this window pop up
+function createWindowPrint(){
+  mainWindow = new BrowserWindow({
+    width  : 400,
+    height : 400,
+    title  : 'Print Aja',
+  })
+  mainWindow.show();
+
+  // and load the index.html of the app.
+  mainWindow.loadURL(url.format({
+    pathname : path.join(__dirname, './menu/print.html'),
+    protocol : 'file:',
+    slashes  : true
+  }));
+}
+
 function createWindowVersion(){
   mainWindow = new BrowserWindow({
     width  : 400,
@@ -93,6 +110,18 @@ const mainMenuTemplate = [
         accelerator : process.platform == 'darwin' ? 'comand+F' : 'Ctrl+F',
         click(){
           createWindowRM();
+        }
+      }
+    ]
+  },
+  {
+    label : 'Print',
+    submenu : [
+      {
+        label : 'Printer Test',
+        accelerator : process.platform == 'darwin' ? 'comand+F' : 'Ctrl+F',
+        click(){
+          createWindowPrint();
         }
       }
     ]
