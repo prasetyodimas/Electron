@@ -28,6 +28,6 @@ connection.query($query, function(err, rows, fields){
 }
 
 //closed the connection status
-connection.end(function(){
-  
-}
+// connection.end(function() {
+
+// }
